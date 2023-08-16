@@ -217,6 +217,10 @@ https://emn178.github.io/online-tools/sha256.html에서 다양한 해싱 알고�
 <meta property="analytics-track" content="Apple - Index/Tab">
 ```
 
+관련 설명은 다음의 사이트에 잘 되어 있다.
+https://yozm.wishket.com/magazine/detail/816/
+
+
 ### 페이지 속도 개선
 
 https://developers.google.com/speed/pagespeed/insites/
@@ -226,8 +230,21 @@ https://developers.google.com/speed/pagespeed/insites/
 ### 사이트맵 관리
 
 sitemap.xml을 정기적으로 관리하여야한다.
-```
+
+Sitemap은 검색 엔진에서 사이트를 보다 지능적으로 크롤링할 수 있도록, 크롤링에 사용할 수 있는 사이트의 페이지에 대한 정보를 검색 엔진에 알리는 방법이다.
+
+XML 파일로 각 URL에 대한 추가 메타데이터(마지막 업데이트된 날짜, 변경 빈도, 사이트의 다른 URL에 상대적인 중요도)와 함께 사이트에 대한 URL을 나열하는 형식을 쓰게 된다.
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://example.com/</loc>
+      <lastmod>2021-05-14T10:00:54+09:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+</urlset> 
 ```
 
 ## HTTPS 구축 방법
