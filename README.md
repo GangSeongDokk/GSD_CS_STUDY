@@ -21,13 +21,15 @@
 |---|---|---|
 |[네트워크의 기초](https://github.com/GangSeongDokk/GSD_CS_STUDY/blob/main/3.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98%20%EA%B8%B0%EC%B4%88.md)|김성준|2023.08.13|
 |[TCP/IP 4계층모델(1/2)](https://github.com/GangSeongDokk/GSD_CS_STUDY/blob/main/3.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EA%B3%84%EC%B8%B5%EA%B5%AC%EC%A1%B0.md)|이강윤|2023.08.13|
-|[TCP/IP 4계층모델(1/2), 네트워크 기기]()|이강윤|2023.08.16|
-|[IP주소]()|김성준|2023.08.16|
-|[HTTP]()|유덕균|2023.08.16|
+|[TCP/IP 4계층모델(1/2), 네트워크 기기](https://github.com/GangSeongDokk/GSD_CS_STUDY/blob/main/3.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B8%B0%EA%B8%B0.md)|이강윤|2023.08.16|
+|[IP주소](https://github.com/GangSeongDokk/GSD_CS_STUDY/blob/main/3.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP%EC%A3%BC%EC%86%8C.md)|김성준|2023.08.16|
+|[HTTP](https://github.com/GangSeongDokk/GSD_CS_STUDY/blob/main/3.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP.md)|유덕균|2023.08.16|
 
 ## 4. 운영체제
 
 |내용|담당|비고|
 |---|---|---|
-||||
-||||
+|[운영체제와 컴퓨터]()|이강윤|2023.08.20|
+|[메모리 계층]()|유덕균|2023.08.20|
+|[메모리 관리]()|김성준|2023.08.20|
+
