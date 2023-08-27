@@ -1,9 +1,9 @@
 import random
 from datetime import datetime, timedelta
-from python.logo import logo
-from python.setting import studysetting, changesetting
-from python.writemd import writemd
-from python.slowprint import slowprint, waiting
+from roulette.logo import logo
+from roulette.setting import studysetting, changesetting
+from roulette.writemd import writemd
+from roulette.slowprint import slowprint, waiting
 
 WEEKNAME = ["월", "화", "수", "목", "금", "토", "일"]
 MEMBERS, MEETING_DATE = studysetting()
