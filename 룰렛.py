@@ -71,7 +71,8 @@ if len(titles) == len(MEMBERS):
     
     confirmdate = nextdate.strftime(format="%Y.%m.%d") + " " + WEEKNAME[nextdate.weekday()]
     while True:
-        topics = random.sample(titles, 3)
+        # topics = random.sample(titles, 3)
+        topics = titles
         people = random.sample(MEMBERS, 3)
         waiting(waitingtime=5)
         print("#"*50 + "\n")

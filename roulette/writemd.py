@@ -5,8 +5,11 @@ READMEDIR = "README.md"
 
 def writemd(members, topics, meetingdate, chapter=""):
     lastchap = ""
+    isnewline = False
     with open("README.md", "r", encoding="utf-8") as f:
         readme = f.readlines()
+        if readme[-1][-1] == "\n":
+            isnewline = True
         for linenum in range(len(readme) - 1, -1, -1):
             spline = readme[linenum].split()
             if spline and spline[0] == "##":
@@ -15,22 +18,15 @@ def writemd(members, topics, meetingdate, chapter=""):
     
     membercnt = len(members)
     with open(READMEDIR, "a+", encoding="utf-8") as f:
-
-        isnewline = False
-        if f.readline().strip() == "\n":
-            isnewline = True
-
-        if chapter:
-            if not isnewline:
-                f.write("\n")
+        
+        if not isnewline:
+            f.write("\n")
+        
+        if chapter:    
             f.write(f"\n## {chapter}\n\n")
-            f.write("|내용|담당|발표일|\n|-|-|-|")
+            f.write("|내용|담당|발표일|\n|-|-|-|\n")
             makedirs(f"{chapter}")
             lastchap = chapter
-
-        isnewline = False
-        if f.readline().strip() == "\n":
-            isnewline = True
 
         for i in range(membercnt):
             topicfile = topics[i]
@@ -42,6 +38,4 @@ def writemd(members, topics, meetingdate, chapter=""):
             lastchap2 = "%20".join(lastchap.split())
             topicfile2 = "%20".join(topicfile.split())
 
-            if not isnewline:
-                f.write("\n")
-            f.write(f"|[{topics[i]}](./{lastchap2}/{topicfile2}.md)|{members[i]}|{meetingdate}|")
+            f.write(f"|[{topics[i]}](./{lastchap2}/{topicfile2}.md)|{members[i]}|{meetingdate}|\n")
